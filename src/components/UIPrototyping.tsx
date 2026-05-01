@@ -1,10 +1,14 @@
 import { ExternalLink } from "lucide-react";
+import adobeThumb from "@/assets/adobe-thumb.png";
+import healthsyncThumb from "@/assets/healthsync-thumb.png";
+import deliveryUiThumb from "@/assets/delivery-ui-thumb.png";
+import designRationaleThumb from "@/assets/design-rationale-thumb.png";
 
 const projects = [
-  { title: "Adobe App 2035", subtitle: "Figma | Design", link: "#" },
-  { title: "HealthSync App", subtitle: "Mobile UI", link: "#" },
-  { title: "Delivery App UI", subtitle: "UI Design & Motion", link: "#" },
-  { title: "Design Rationale", subtitle: "Research", link: "#" },
+  { title: "Adobe App 2035", subtitle: "Figma | Design", link: "#", image: adobeThumb },
+  { title: "HealthSync App", subtitle: "Mobile UI", link: "#", image: healthsyncThumb },
+  { title: "Delivery App UI", subtitle: "UI Design & Motion", link: "#", image: deliveryUiThumb },
+  { title: "Design Rationale", subtitle: "Research", link: "#", image: designRationaleThumb },
 ];
 
 export function UIPrototyping() {
@@ -19,9 +23,10 @@ export function UIPrototyping() {
               href={p.link}
               className="group block"
             >
-              <div className="aspect-square bg-purple-light rounded-2xl border border-border overflow-hidden flex items-center justify-center group-hover:shadow-md transition-shadow relative">
-                <div className="w-3/4 h-3/4 bg-card rounded-lg border border-border/50 flex items-center justify-center">
-                  <ExternalLink className="w-5 h-5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="aspect-square bg-purple-light rounded-2xl border border-border overflow-hidden flex items-center justify-center group-hover:shadow-md transition-shadow relative p-3">
+                <img src={p.image} alt={p.title} className="w-full h-full object-cover rounded-lg" />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/20 transition-colors rounded-2xl">
+                  <ExternalLink className="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity drop-shadow-lg" />
                 </div>
               </div>
               <h3 className="font-semibold text-sm text-foreground mt-3">{p.title}</h3>
