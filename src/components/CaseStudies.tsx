@@ -1,5 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import delhiveryThumb from "@/assets/delhivery-thumb.png";
+import ecocartThumb from "@/assets/ecocart-thumb.png";
+import zomatoThumb from "@/assets/zomato-thumb.png";
+import techinnovateThumb from "@/assets/techinnovate-thumb.png";
+import erpThumb from "@/assets/erp-thumb.png";
 
 const caseStudies = [
   {
@@ -8,6 +13,7 @@ const caseStudies = [
     desc: "Architected a B2C logistics framework targeting 2M MAU, designed to optimize delivery SLAs and drive massive operational op-ex savings.",
     color: "bg-card",
     link: "#",
+    image: delhiveryThumb,
   },
   {
     title: "HelloPM EcoCart",
@@ -15,6 +21,7 @@ const caseStudies = [
     desc: "Engineered a smart e-commerce platform integrating 'EcoCoin' rewards and carbon scoring to drive sustainable consumer purchasing behavior.",
     color: "bg-purple-light",
     link: "#",
+    image: ecocartThumb,
   },
   {
     title: "Zomato Street Food",
@@ -22,6 +29,7 @@ const caseStudies = [
     desc: "Designed an accessible, AI-assisted onboarding ecosystem aimed at bringing 400k regional street food vendors into the digital delivery space.",
     color: "bg-purple-light",
     link: "#",
+    image: zomatoThumb,
   },
   {
     title: "Techinnovate Mobility",
@@ -29,6 +37,7 @@ const caseStudies = [
     desc: "Developed a foundational routing strategy and feature set projected to cut return-trip logistical losses by up to 60%.",
     color: "bg-purple-light",
     link: "#",
+    image: techinnovateThumb,
   },
   {
     title: "ERP for SMEs",
@@ -36,6 +45,7 @@ const caseStudies = [
     desc: "Designed an intuitive enterprise resource planning solution to drastically lower the learning curve and improve digital adoption for small business owners.",
     color: "bg-purple-light",
     link: "#",
+    image: erpThumb,
   },
 ];
 
@@ -60,13 +70,11 @@ export function CaseStudies() {
   );
 }
 
-function CaseCard({ title, subtitle, desc, color, link }: { title: string; subtitle: string; desc: string; color: string; link: string }) {
+function CaseCard({ title, subtitle, desc, color, link, image }: { title: string; subtitle: string; desc: string; color: string; link: string; image: string }) {
   return (
     <div className="bg-card rounded-2xl border border-border overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
       <div className={`${color} h-48 flex items-center justify-center p-4`}>
-        <div className="w-full h-full bg-muted/40 rounded-lg border border-border/50 flex items-center justify-center overflow-hidden">
-          <div className="w-full h-full bg-gradient-to-br from-muted/20 to-muted/60 rounded-lg" />
-        </div>
+        <img src={image} alt={title} className="w-full h-full object-cover rounded-lg" />
       </div>
       {subtitle && (
         <div className="px-5 pt-4">
