@@ -17,7 +17,7 @@ export function AboutSection() {
           With a dual degree from IIT Kharagpur, I blend rigorous analytical problem-solving with user-centric design principles. My expertise lies in zero-to-one product innovation—from streamlining complex B2C supply chains to pioneering sustainable e-commerce platforms. I believe great design isn't just aesthetic; it's a measurable driver for operational efficiency and business growth.
         </p>
         <Button variant="hero" size="default" className="mt-6 gap-2 bg-foreground text-background hover:bg-foreground/90" asChild>
-          <a href="#">
+          <a href="https://drive.google.com/file/d/1auxJLDrco6qMsagiY55jEw8s4n_CMGHX/view?usp=share_link" target="_blank" rel="noopener noreferrer">
             <Download className="w-4 h-4" />
             Download CV
           </a>
