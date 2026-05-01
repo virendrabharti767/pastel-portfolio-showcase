@@ -5,10 +5,10 @@ import deliveryUiThumb from "@/assets/delivery-ui-thumb.png";
 import designRationaleThumb from "@/assets/design-rationale-thumb.png";
 
 const projects = [
-  { title: "Adobe App 2035", subtitle: "Figma | Design", link: "#", image: adobeThumb },
+  { title: "Adobe App 2030", subtitle: "Figma | Design", link: "#", image: designRationaleThumb },
   { title: "HealthSync App", subtitle: "Mobile UI", link: "#", image: healthsyncThumb },
   { title: "Delivery App UI", subtitle: "UI Design & Motion", link: "#", image: deliveryUiThumb },
-  { title: "Design Rationale", subtitle: "Research", link: "#", image: designRationaleThumb },
+  { title: "Design Rationale", subtitle: "Research", link: "#", image: adobeThumb },
 ];
 
 export function UIPrototyping() {

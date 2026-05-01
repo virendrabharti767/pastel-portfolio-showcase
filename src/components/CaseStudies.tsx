@@ -76,16 +76,10 @@ function CaseCard({ title, subtitle, desc, color, link, image }: { title: string
       <div className={`${color} h-48 flex items-center justify-center p-4`}>
         <img src={image} alt={title} className="w-full h-full object-cover rounded-lg" />
       </div>
-      {subtitle && (
-        <div className="px-5 pt-4">
-          <p className="text-sm font-medium text-foreground">
-            {subtitle.includes("Delhivery") ? (
-              <>The <span className="text-red-500 font-bold">Delhivery</span> Way</>
-            ) : subtitle}
-          </p>
-        </div>
-      )}
       <div className="p-5 flex-1 flex flex-col">
+        {subtitle && (
+          <p className="text-sm text-muted-foreground mb-1">{subtitle}</p>
+        )}
         <h3 className="font-bold text-lg text-foreground">{title}</h3>
         <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{desc}</p>
         <Button variant="readMore" className="mt-4" asChild>
