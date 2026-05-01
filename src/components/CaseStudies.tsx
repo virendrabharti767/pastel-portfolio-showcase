@@ -3,32 +3,37 @@ import { ArrowRight } from "lucide-react";
 
 const caseStudies = [
   {
-    title: "Delhivery B2C Edge",
-    desc: "Re-imagined B2C logistics experience with end-to-end order tracking, reducing support tickets by 30%.",
-    color: "bg-purple-light",
+    title: "Delhivery B2C Edge", 
+    subtitle: "The Delhivery Way",
+    desc: "Architected a B2C logistics framework targeting 2M MAU, designed to optimize delivery SLAs and drive massive operational op-ex savings.",
+    color: "bg-card",
     link: "#",
   },
   {
-    title: "HelloPM EcoCert",
-    desc: "Built end-to-end sustainability certification platform for SMEs with gamified onboarding.",
-    color: "bg-cream-dark",
+    title: "HelloPM EcoCart",
+    subtitle: "",
+    desc: "Engineered a smart e-commerce platform integrating 'EcoCoin' rewards and carbon scoring to drive sustainable consumer purchasing behavior.",
+    color: "bg-purple-light",
     link: "#",
   },
   {
     title: "Zomato Street Food",
-    desc: "Cataloging India's street food vendors, a hyperlocal marketplace connecting 100K+ vendors with urban consumers.",
+    subtitle: "",
+    desc: "Designed an accessible, AI-assisted onboarding ecosystem aimed at bringing 400k regional street food vendors into the digital delivery space.",
     color: "bg-purple-light",
     link: "#",
   },
   {
-    title: "TechInnovate Mobility",
-    desc: "Designed a ride-sharing and transit integration platform with real-time tracking and digital payment flow.",
-    color: "bg-cream-dark",
+    title: "Techinnovate Mobility",
+    subtitle: "",
+    desc: "Developed a foundational routing strategy and feature set projected to cut return-trip logistical losses by up to 60%.",
+    color: "bg-purple-light",
     link: "#",
   },
   {
     title: "ERP for SMEs",
-    desc: "Simplified complex ERP workflows with a clean, modern interface, streamlining accounting for small businesses.",
+    subtitle: "",
+    desc: "Designed an intuitive enterprise resource planning solution to drastically lower the learning curve and improve digital adoption for small business owners.",
     color: "bg-purple-light",
     link: "#",
   },
@@ -39,7 +44,7 @@ export function CaseStudies() {
     <section id="case-studies" className="py-20 px-6 bg-cream">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-foreground">Case Studies</h2>
-        <p className="text-muted-foreground mt-2">Explore real projects. From complex product challenges to school design assignments.</p>
+        <p className="text-muted-foreground mt-2">Detailed explorations of complex product challenges<br />solved through design thinking.</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
           {caseStudies.slice(0, 3).map((cs) => (
             <CaseCard key={cs.title} {...cs} />
@@ -55,16 +60,27 @@ export function CaseStudies() {
   );
 }
 
-function CaseCard({ title, desc, color, link }: { title: string; desc: string; color: string; link: string }) {
+function CaseCard({ title, subtitle, desc, color, link }: { title: string; subtitle: string; desc: string; color: string; link: string }) {
   return (
-    <div className="bg-card rounded-2xl border border-border overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-      <div className={`${color} h-40 flex items-center justify-center`}>
-        <div className="w-3/4 h-28 bg-card/60 rounded-lg border border-border/50" />
+    <div className="bg-card rounded-2xl border border-border overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+      <div className={`${color} h-48 flex items-center justify-center p-4`}>
+        <div className="w-full h-full bg-muted/40 rounded-lg border border-border/50 flex items-center justify-center overflow-hidden">
+          <div className="w-full h-full bg-gradient-to-br from-muted/20 to-muted/60 rounded-lg" />
+        </div>
       </div>
-      <div className="p-5">
-        <h3 className="font-bold text-foreground">{title}</h3>
+      {subtitle && (
+        <div className="px-5 pt-4">
+          <p className="text-sm font-medium text-foreground">
+            {subtitle.includes("Delhivery") ? (
+              <>The <span className="text-red-500 font-bold">Delhivery</span> Way</>
+            ) : subtitle}
+          </p>
+        </div>
+      )}
+      <div className="p-5 flex-1 flex flex-col">
+        <h3 className="font-bold text-lg text-foreground">{title}</h3>
         <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{desc}</p>
-        <Button variant="readMore" className="mt-3" asChild>
+        <Button variant="readMore" className="mt-4" asChild>
           <a href={link}>
             Read More <ArrowRight className="w-3.5 h-3.5" />
           </a>
