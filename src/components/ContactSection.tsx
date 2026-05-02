@@ -12,11 +12,11 @@ export function ContactSection() {
               Have a project in mind? Let's build something exceptional together.
             </p>
             <div className="mt-6 space-y-3">
-              <a href="mailto:virendrabharti003@gmail.com" className="flex items-center gap-3 text-sm text-foreground hover:text-primary transition-colors">
+              <a href="mailto:virendrabharti008@gmail.com" className="flex items-center gap-3 text-sm text-foreground hover:text-primary transition-colors">
                 <Mail className="w-4 h-4 text-primary" />
-                virendrabharti003@gmail.com
+                virendrabharti008@gmail.com
               </a>
-              <a href="#" className="flex items-center gap-3 text-sm text-foreground hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/in/virendrabharti" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-foreground hover:text-primary transition-colors">
                 <Linkedin className="w-4 h-4 text-primary" />
                 LinkedIn Profile
               </a>
