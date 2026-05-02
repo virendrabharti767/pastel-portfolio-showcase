@@ -31,7 +31,7 @@ export function HeroSection() {
           </div>
         </div>
         <div className="relative hidden md:block">
-          <div className="rounded-2xl overflow-hidden shadow-xl border border-border bg-white flex items-end justify-center max-w-[280px] ml-auto">
+          <div className="rounded-2xl overflow-hidden shadow-xl border border-border bg-white flex items-end justify-center">
             <img
               src={virendraPhoto}
               alt="Virendra Bharti"
