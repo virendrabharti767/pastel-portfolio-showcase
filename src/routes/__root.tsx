@@ -37,6 +37,10 @@ export const Route = createRootRoute({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Virendra Bharti — Product Designer & PM" },
+      { name: "twitter:description", content: "Portfolio of Virendra Bharti, Product Designer & PM from IIT Kharagpur" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/35a55637-03ef-4650-ba3d-5a9a52f140b9" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/35a55637-03ef-4650-ba3d-5a9a52f140b9" },
     ],
     links: [
       {
