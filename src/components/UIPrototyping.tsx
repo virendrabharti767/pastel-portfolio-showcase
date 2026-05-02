@@ -6,9 +6,9 @@ import designRationaleThumb from "@/assets/design-rationale-thumb.png";
 
 const projects = [
   { title: "Adobe App 2030", subtitle: "Figma | Design", link: "https://www.figma.com/proto/Tb37yc8ZGT5Asiz1rE6kHj/Adobe?node-id=0-1&t=t6iHQXQbeQh1j0zu-1", image: designRationaleThumb },
-  { title: "HealthSync App", subtitle: "Mobile UI", link: "#", image: healthsyncThumb },
-  { title: "Delivery App UI", subtitle: "UI Design & Motion", link: "#", image: deliveryUiThumb },
-  { title: "Design Rationale", subtitle: "Research", link: "#", image: adobeThumb },
+  { title: "Food Recipe App", subtitle: "Mobile UI", link: "https://www.figma.com/design/VweExnbUSiofPw5dbved7N/Food-Recipe-app?m=auto&t=4j96XA96EyQB4qd2-6", image: healthsyncThumb },
+  { title: "Delhivery App UI", subtitle: "UI Design & Motion", link: "https://www.figma.com/design/VMTpnDWmHOFjDzkfwv69o1/Delhivery?m=auto&t=4j96XA96EyQB4qd2-6", image: deliveryUiThumb },
+  { title: "Design Rationale", subtitle: "Research", link: "https://www.figma.com/design/r7fYemNy6iCtMAvct3svfo/design-rationale?m=auto&t=4j96XA96EyQB4qd2-6", image: adobeThumb },
 ];
 
 export function UIPrototyping() {
