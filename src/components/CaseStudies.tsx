@@ -12,7 +12,7 @@ const caseStudies = [
     subtitle: "The Delhivery Way",
     desc: "Architected a B2C logistics framework targeting 2M MAU, designed to optimize delivery SLAs and drive massive operational op-ex savings.",
     color: "bg-card",
-    link: "#",
+    link: "https://drive.google.com/file/d/1rg9HQEdA5ay_dWxPW1quAPxFh-7eOkLb/view?usp=share_link",
     image: delhiveryThumb,
   },
   {
@@ -20,7 +20,7 @@ const caseStudies = [
     subtitle: "",
     desc: "Engineered a smart e-commerce platform integrating 'EcoCoin' rewards and carbon scoring to drive sustainable consumer purchasing behavior.",
     color: "bg-purple-light",
-    link: "#",
+    link: "https://drive.google.com/file/d/1G4VhN2ri1QOKuF4agM9QRyOUlsAOwfZ_/view?usp=share_link",
     image: ecocartThumb,
   },
   {
@@ -28,7 +28,7 @@ const caseStudies = [
     subtitle: "",
     desc: "Designed an accessible, AI-assisted onboarding ecosystem aimed at bringing 400k regional street food vendors into the digital delivery space.",
     color: "bg-purple-light",
-    link: "#",
+    link: "https://drive.google.com/file/d/1vz_viBZ9SN3NjWHlUKHAYJB9C3QKHYQU/view?usp=share_link",
     image: zomatoThumb,
   },
   {
@@ -36,7 +36,7 @@ const caseStudies = [
     subtitle: "",
     desc: "Developed a foundational routing strategy and feature set projected to cut return-trip logistical losses by up to 60%.",
     color: "bg-purple-light",
-    link: "#",
+    link: "https://drive.google.com/file/d/15EFeZdKDANhTzUBmcvzYJ9tdEtrx0f2q/view?usp=share_link",
     image: techinnovateThumb,
   },
   {
@@ -44,7 +44,7 @@ const caseStudies = [
     subtitle: "",
     desc: "Designed an intuitive enterprise resource planning solution to drastically lower the learning curve and improve digital adoption for small business owners.",
     color: "bg-purple-light",
-    link: "#",
+    link: "https://drive.google.com/file/d/1y1q4Dco-JkYVYYY7UIddBrU78Del-gsf/view?usp=sharing",
     image: erpThumb,
   },
 ];
