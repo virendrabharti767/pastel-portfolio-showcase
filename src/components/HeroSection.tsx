@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import virendraPhoto from "@/assets/virendra-photo.png";
 
 export function HeroSection() {
   return (
@@ -30,12 +31,12 @@ export function HeroSection() {
           </div>
         </div>
         <div className="relative hidden md:block">
-          <div className="rounded-2xl overflow-hidden shadow-xl bg-card border border-border">
-            <div className="grid grid-cols-2 gap-1 p-2">
-              <div className="bg-purple-light rounded-lg h-32 flex items-center justify-center text-xs text-muted-foreground">Project Preview</div>
-              <div className="bg-purple-light rounded-lg h-32 flex items-center justify-center text-xs text-muted-foreground">Dashboard</div>
-              <div className="bg-cream-dark rounded-lg h-24 flex items-center justify-center text-xs text-muted-foreground col-span-2">App Screenshot</div>
-            </div>
+          <div className="rounded-2xl overflow-hidden shadow-xl border border-border bg-gradient-to-br from-purple-light/40 to-cream p-4">
+            <img
+              src={virendraPhoto}
+              alt="Virendra Bharti"
+              className="w-full h-auto rounded-xl object-cover"
+            />
           </div>
         </div>
       </div>
