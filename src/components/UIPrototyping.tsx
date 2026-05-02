@@ -5,7 +5,7 @@ import deliveryUiThumb from "@/assets/delivery-ui-thumb.png";
 import designRationaleThumb from "@/assets/design-rationale-thumb.png";
 
 const projects = [
-  { title: "Adobe App 2030", subtitle: "Figma | Design", link: "#", image: designRationaleThumb },
+  { title: "Adobe App 2030", subtitle: "Figma | Design", link: "https://www.figma.com/proto/Tb37yc8ZGT5Asiz1rE6kHj/Adobe?node-id=0-1&t=t6iHQXQbeQh1j0zu-1", image: designRationaleThumb },
   { title: "HealthSync App", subtitle: "Mobile UI", link: "#", image: healthsyncThumb },
   { title: "Delivery App UI", subtitle: "UI Design & Motion", link: "#", image: deliveryUiThumb },
   { title: "Design Rationale", subtitle: "Research", link: "#", image: adobeThumb },
