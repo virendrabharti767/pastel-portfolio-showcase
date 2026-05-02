@@ -31,11 +31,11 @@ export function HeroSection() {
           </div>
         </div>
         <div className="relative hidden md:block">
-          <div className="rounded-2xl overflow-hidden shadow-xl border border-border bg-gradient-to-br from-purple-light/40 to-cream p-4">
+          <div className="rounded-2xl overflow-hidden shadow-xl border border-border bg-white flex items-end justify-center">
             <img
               src={virendraPhoto}
               alt="Virendra Bharti"
-              className="w-full h-auto rounded-xl object-cover"
+              className="w-auto h-[380px] object-cover object-top"
             />
           </div>
         </div>
