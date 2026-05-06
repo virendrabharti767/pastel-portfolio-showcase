@@ -25,8 +25,8 @@ export function HeroSection() {
             </Button>
           </div>
           <div className="flex gap-4 mt-10">
-            <StatBox title="IIT Kharagpur" subtitle="Dual Degree, Industrial Engineering & Management" />
-            <StatBox title="National Finalist" subtitle="Smart India Hackathon 2023, Innovation Challenge" />
+            <StatBox title="IIT Kharagpur" subtitle="Btech+Mtech Dual Degree" />
+            <StatBox title="National Finalist" subtitle="The Delhivery Way, Hello PM and Apex Spark" />
             <StatBox title="9+ Projects" subtitle="Product Design, UX Research, B2C & B2B SaaS" />
           </div>
         </div>
